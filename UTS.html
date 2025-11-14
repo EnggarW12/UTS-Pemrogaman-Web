@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="UTS.css">
+  <title>MY PROFIL</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class=" navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">             
+      <a class="navbar-brand text-white fw-bold" href="home">Enggar Wijonarko</a>
+      <p id="tanggal" class="text-white small mb-0"></p>&nbsp;    
+      <p id="jamSekarang"class="text-white small mb-0"></p>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+          <a id="btnWarna" class="navbar-brand ms-2" onclick="gantiMode()">
+            <span id="logoMode">☀️</span>
+          </a>
+        </ul>       
+      </div>      
+    </div>
+  </nav>
+
+  <section id="home">
+    <img src="foto profil.jpeg" alt="Foto Profil">
+    <h1>Enggar Wijonarko</h1>
+    <p>Web Developer  |  Cyber Security Spesialist  |  Software Engineer</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/ngggggr_99?igsh=MWdqOWR3eTFqNm1vbg==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="http://www.whatsapp.com/wa.me.088232198579" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/enggar.wijononarko" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/enggar-wijonarko-2932122a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app//" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="text-center mb-4">Tentang Saya</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="foto profil.jpeg" 
+            alt="Foto Profil Enggar Wijonarko" 
+            class="img-about">
+      </div>
+      <div class="col-md-8">
+        <table class="table table-bordered">
+          <tr>
+            <th>Nama</th>
+            <td>Enggar Wijonarko</td>
+          </tr>
+          <tr>
+            <th>Pendidikan</th>
+            <td>Mahasiswa S1 Teknik Informatika - Universitas Pelita Bangsa</td>
+          </tr>
+          <tr>
+            <th>Minat</th>
+            <td>Cyber Security, Web Development, dan Software Engineer</td>
+          </tr>
+          <tr>
+            <th>Keahlian</th>
+            <td>
+              <ul>
+                <li>HTML, CSS, JavaScript, dan Bootstrap (Front-End Web)</li>
+                <li>PHP & Python untuk pengembangan Back-End</li>
+                <li>MySQL & SQLite untuk manajemen basis data</li>
+                <li>OOP, algoritma, dan desain sistem perangkat lunak</li>
+                <li>Linux, jaringan komputer, dan dasar keamanan siber</li>
+                <li>Pemindaian kerentanan & etical hacking (Nmap, Wireshark, Metasploit)</li>
+                <li>Penggunaan Git & GitHub untuk kolaborasi proyek</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="portofolio" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 ">Portofolio Saya</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0">
+            <img src="" class="" alt="">
+            <div class="card-body">
+              <img src="web.jpg" alt="Website Developer" class="card-img-custom">
+              <h5 class="card-title">Website Portofolio</h5>
+              <p class="card-text">Website pribadi untuk menampilakan profil dan karya. Dibuat menggunakan html,css, dan js.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0">
+            <img src="" class="" alt="">
+            <div class="card-body">
+              <img src="management.jpg" alt="Website Developer" class="card-img-custom">
+              <h5 class="card-title">Aplikasi Management Produksi</h5>
+              <p class="card-text">Progam sederhana untuk merekap hasil data produksi yang berbasih Delphi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0">
+            <img src="" class="" alt="">
+            <div class="card-body">
+              <img src="pass.jpg" alt="Website Developer" class="card-img-custom">
+              <h5 class="card-title">Password Strength Checker</h5>
+              <p class="card-text">Aplikasi web yang memeriksa kekuatan password dan memberi saran keamanan bagi pengguna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" placeholder="Nama Lengkap" required/>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="ewewewe@gmail.com" required/>
+
+      <label for="pesan">Pesan</label>
+      <textarea name="pesan" id="pesan" placeholder="Masukan Pesan Anda disini" required></textarea>
+
+      <button type="submit" class="btn">Kirim</button>
+      <p class="note">Semua kolom wajib diisi.</p>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Enggar Wijonarko. All rights reserved.</p>
+  </footer>
+
+  <script src="UTS.js" defer></script>  
+</body>
+</html>

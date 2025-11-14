@@ -1,0 +1,270 @@
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1px 0;
+  transition: background 0.3s ease;
+}
+nav a.nav-link,
+nav .navbar-brand {
+  color: white !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+nav a.nav-link:hover {
+  color: #00bcd4 !important;
+}
+nav.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(28, 28, 28, 0.5), rgba(32, 32, 32, 0.5)),
+    url("UPB.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 80px;
+}
+#home img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #00bcd4;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+  transition: transform 0.3s ease;
+}
+#home img:hover {
+  transform: scale(1.08);
+}
+#home h1 {
+  margin-top: 25px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+#home p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ddd;
+}
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.social-icons a {
+  color: #00bcd4;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icons a:hover {
+  color: white;
+  transform: scale(1.3);
+}
+
+#about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  background: linear-gradient(180deg, #d6d6d5, #f2f4de);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+}
+#about .img-about{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+#about table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: #000000;
+  border: 3px solid;
+}
+#about th {
+  padding: 12px;
+  background-color: rgba(0, 188, 212, 0.2);
+  color: #000000;
+  font-weight: 600;
+  border: 3px solid;
+}
+#about td {
+  padding: 12px;
+  color: #000000;
+  border: 3px solid;
+  background: rgb(180, 243, 243);
+}
+#about ul {
+  margin: 0;
+  padding-left: 20px;
+}
+#about li {
+  line-height: 1.8;
+  color: #333;
+}
+
+#portofolio {
+  background: linear-gradient(180deg, #d6d6d5, #f2f4de);
+  color : rgb(0, 0, 0);
+  padding: 100px 0;
+  width: 100%;
+  min-height: 100vh;
+}
+#portofolio .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  background: rgb(236, 164, 97);
+}
+#portofolio .card-img-custom{
+  height: 100px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portofolio .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
+}
+#portofolio .card-title {
+  text-align: center;
+  color: #0f1010;
+  font-weight: bold;
+}
+#portofolio .card-text{
+  padding-top: 30px;
+  text-align: center;
+}
+
+#contact {
+  background: linear-gradient(180deg, #d6d6d5, #f2f4de);
+  padding: 80px 0;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+#contact label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+#contact button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#contact button:hover {
+  background-color: #0097a7;
+}
+#contact .note {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.95rem;
+}
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode nav {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+body.dark-mode #about {
+  background:  #1e1e1e !important;
+}
+body.dark-mode #about table,
+body.dark-mode #about th,
+body.dark-mode #about td {
+  background-color: #6d6b6b !important;
+  color: #f1f1f1 !important;
+  border-color: #fffafa !important;
+}
+body.dark-mode #about h2,
+body.dark-mode #about th,
+body.dark-mode #about td,
+body.dark-mode #about li,
+body.dark-mode #contact h2,
+body.dark-mode #contact label,
+body.dark-mode #contact .note {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode #portofolio {
+  background: #1e1e1e !important;
+  color: white;
+}
+body.dark-mode #portofolio .card{
+  background: rgb(154, 153, 153);
+}
+
+body.dark-mode #contact {
+  background: #1e1e1e !important;
+}
+
+body.dark-mode #contact form {
+  background-color: #3e3d3d !important;
+  color: #eee !important;
+}
+
+body.dark-mode footer {
+  background-color: #000 !important;
+  color: #f1f1f1 !important;
+}
